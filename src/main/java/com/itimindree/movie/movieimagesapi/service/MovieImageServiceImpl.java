@@ -41,7 +41,7 @@ public class MovieImageServiceImpl implements MovieImageService {
 
     }
 
-    private void addMovieImage(String imageUrl, int releaseYear) {
+    public void addMovieImage(String imageUrl, int releaseYear) {
         MovieImage movieImage = new MovieImage();
         movieImage.setId(nextId++);
         movieImage.setUrl(imageUrl);
