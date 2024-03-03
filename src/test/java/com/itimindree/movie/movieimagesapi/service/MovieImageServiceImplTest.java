@@ -62,7 +62,6 @@ public class MovieImageServiceImplTest {
 
     @Test
     void testUpVoteMovieImage() {
-        // Assuming the first image has ID 1L
         MovieImage upVotedImage = movieImageServiceImpl.voteMovieImage(1L, true);
         assertEquals(1, upVotedImage.getFavoritesCount());
     }
